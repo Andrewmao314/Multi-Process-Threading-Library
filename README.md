@@ -1,8 +1,8 @@
-##Multi-Process Threading Library
-#Overview
+# Multi-Process Threading Library
+## Overview
 This project implements a sophisticated M-to-N hybrid threading library in C that multiplexes user-level threads across multiple kernel-level threads (represented as POSIX threads). Unlike traditional N-to-1 threading models, this implementation enables true parallel execution of user threads across multiple processors.
 
-#Key Features
+## Key Features
 Hybrid Threading Model: Implements an M-to-N threading architecture where M user threads are multiplexed across N kernel threads
 Thread-Local Storage: Uses GCC's __thread extension to maintain thread-specific data and ensure isolation
 Robust Synchronization: Employs POSIX mutexes and atomic operations to protect shared data structures
@@ -10,7 +10,7 @@ Context Switching: Sophisticated context management between lightweight processe
 Signal Handling: Implements preemption through SIGVTALRM signals with proper masking during critical sections
 Thread Operations: Full support for thread creation, joining, detaching, and priority-based scheduling
 
-#Technical Implementation
+## Technical Implementation
 The library provides comprehensive thread management capabilities including:
 Thread creation, joining, and detaching
 Priority-based scheduling with dynamic priority adjustment
